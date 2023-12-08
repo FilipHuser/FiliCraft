@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		614F2BE72B219CA400914383 /* FiliCraft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614F2BE52B219CA400914383 /* FiliCraft.cpp */; };
+		614F2BEA2B21A2B900914383 /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614F2BE82B21A2B900914383 /* Mesh.cpp */; };
+		614F2BED2B21A2C400914383 /* Transformation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614F2BEB2B21A2C400914383 /* Transformation.cpp */; };
+		61522F6E2B208D5D007629FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61522F6D2B208D5D007629FA /* main.cpp */; };
+		619343F22B219B51002A5F68 /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 619343F02B219B51002A5F68 /* Block.cpp */; };
+		619343F52B219B5D002A5F68 /* Material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 619343F32B219B5D002A5F68 /* Material.cpp */; };
+		619343F82B219B70002A5F68 /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 619343F62B219B70002A5F68 /* ShaderProgram.cpp */; };
+		61FE92F12B222BB900DBA3BA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE92F02B222BB900DBA3BA /* OpenGL.framework */; };
+		61FE92F32B222BD800DBA3BA /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE92F22B222BD800DBA3BA /* libglfw.3.3.dylib */; };
+		61FE92F52B222C0000DBA3BA /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE92F42B222C0000DBA3BA /* libGLEW.2.2.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61522F682B208D5D007629FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		614F2BE52B219CA400914383 /* FiliCraft.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FiliCraft.cpp; sourceTree = "<group>"; };
+		614F2BE62B219CA400914383 /* FiliCraft.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FiliCraft.hpp; sourceTree = "<group>"; };
+		614F2BE82B21A2B900914383 /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		614F2BE92B21A2B900914383 /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
+		614F2BEB2B21A2C400914383 /* Transformation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Transformation.cpp; sourceTree = "<group>"; };
+		614F2BEC2B21A2C400914383 /* Transformation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Transformation.hpp; sourceTree = "<group>"; };
+		61522F6A2B208D5D007629FA /* FiliCraft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FiliCraft; sourceTree = BUILT_PRODUCTS_DIR; };
+		61522F6D2B208D5D007629FA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		619343F02B219B51002A5F68 /* Block.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		619343F12B219B51002A5F68 /* Block.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Block.hpp; sourceTree = "<group>"; };
+		619343F32B219B5D002A5F68 /* Material.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Material.cpp; sourceTree = "<group>"; };
+		619343F42B219B5D002A5F68 /* Material.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Material.hpp; sourceTree = "<group>"; };
+		619343F62B219B70002A5F68 /* ShaderProgram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		619343F72B219B70002A5F68 /* ShaderProgram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderProgram.hpp; sourceTree = "<group>"; };
+		61FE92F02B222BB900DBA3BA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		61FE92F22B222BD800DBA3BA /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		61FE92F42B222C0000DBA3BA /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../opt/homebrew/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61522F672B208D5D007629FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61FE92F52B222C0000DBA3BA /* libGLEW.2.2.0.dylib in Frameworks */,
+				61FE92F32B222BD800DBA3BA /* libglfw.3.3.dylib in Frameworks */,
+				61FE92F12B222BB900DBA3BA /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61522F612B208D5D007629FA = {
+			isa = PBXGroup;
+			children = (
+				61522F6C2B208D5D007629FA /* FiliCraft */,
+				61522F6B2B208D5D007629FA /* Products */,
+				61FE92EF2B222BB900DBA3BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		61522F6B2B208D5D007629FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61522F6A2B208D5D007629FA /* FiliCraft */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61522F6C2B208D5D007629FA /* FiliCraft */ = {
+			isa = PBXGroup;
+			children = (
+				619343F02B219B51002A5F68 /* Block.cpp */,
+				619343F12B219B51002A5F68 /* Block.hpp */,
+				614F2BE52B219CA400914383 /* FiliCraft.cpp */,
+				614F2BE62B219CA400914383 /* FiliCraft.hpp */,
+				61522F6D2B208D5D007629FA /* main.cpp */,
+				619343F32B219B5D002A5F68 /* Material.cpp */,
+				619343F42B219B5D002A5F68 /* Material.hpp */,
+				619343FC2B219BC1002A5F68 /* Models */,
+				619343F72B219B70002A5F68 /* ShaderProgram.hpp */,
+				619343F92B219B7F002A5F68 /* Shaders */,
+				619343FB2B219BB0002A5F68 /* Textures */,
+				614F2BE82B21A2B900914383 /* Mesh.cpp */,
+				614F2BEB2B21A2C400914383 /* Transformation.cpp */,
+				614F2BEC2B21A2C400914383 /* Transformation.hpp */,
+				614F2BE92B21A2B900914383 /* Mesh.hpp */,
+			);
+			path = FiliCraft;
+			sourceTree = "<group>";
+		};
+		619343F92B219B7F002A5F68 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				619343F62B219B70002A5F68 /* ShaderProgram.cpp */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		619343FB2B219BB0002A5F68 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		619343FC2B219BC1002A5F68 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61FE92EF2B222BB900DBA3BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61FE92F42B222C0000DBA3BA /* libGLEW.2.2.0.dylib */,
+				61FE92F22B222BD800DBA3BA /* libglfw.3.3.dylib */,
+				61FE92F02B222BB900DBA3BA /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61522F692B208D5D007629FA /* FiliCraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61522F712B208D5D007629FA /* Build configuration list for PBXNativeTarget "FiliCraft" */;
+			buildPhases = (
+				61522F662B208D5D007629FA /* Sources */,
+				61522F672B208D5D007629FA /* Frameworks */,
+				61522F682B208D5D007629FA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FiliCraft;
+			productName = FiliCraft;
+			productReference = 61522F6A2B208D5D007629FA /* FiliCraft */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61522F622B208D5D007629FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					61522F692B208D5D007629FA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 61522F652B208D5D007629FA /* Build configuration list for PBXProject "FiliCraft" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61522F612B208D5D007629FA;
+			productRefGroup = 61522F6B2B208D5D007629FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61522F692B208D5D007629FA /* FiliCraft */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61522F662B208D5D007629FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614F2BEA2B21A2B900914383 /* Mesh.cpp in Sources */,
+				61522F6E2B208D5D007629FA /* main.cpp in Sources */,
+				614F2BE72B219CA400914383 /* FiliCraft.cpp in Sources */,
+				619343F82B219B70002A5F68 /* ShaderProgram.cpp in Sources */,
+				619343F22B219B51002A5F68 /* Block.cpp in Sources */,
+				614F2BED2B21A2C400914383 /* Transformation.cpp in Sources */,
+				619343F52B219B5D002A5F68 /* Material.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61522F6F2B208D5D007629FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		61522F702B208D5D007629FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		61522F722B208D5D007629FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/glfw/3.3.8/include,
+					/opt/homebrew/Cellar/glew/2.2.0_1/include,
+					/opt/homebrew/Cellar/glm/0.9.9.8/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61522F732B208D5D007629FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/glfw/3.3.8/include,
+					/opt/homebrew/Cellar/glew/2.2.0_1/include,
+					/opt/homebrew/Cellar/glm/0.9.9.8/include,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/glfw/3.3.8/lib,
+					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61522F652B208D5D007629FA /* Build configuration list for PBXProject "FiliCraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61522F6F2B208D5D007629FA /* Debug */,
+				61522F702B208D5D007629FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61522F712B208D5D007629FA /* Build configuration list for PBXNativeTarget "FiliCraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61522F722B208D5D007629FA /* Debug */,
+				61522F732B208D5D007629FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61522F622B208D5D007629FA /* Project object */;
+}
