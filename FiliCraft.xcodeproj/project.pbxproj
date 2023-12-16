@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6146993B2B23D46700C2B4DF /* ShaderLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614699392B23D46700C2B4DF /* ShaderLoader.cpp */; };
+		6146993E2B23E0D700C2B4DF /* ShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6146993C2B23E0D700C2B4DF /* ShaderProgram.cpp */; };
+		614699442B23E68800C2B4DF /* DrawableObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614699422B23E68800C2B4DF /* DrawableObj.cpp */; };
+		614699472B23E8BC00C2B4DF /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614699452B23E8BC00C2B4DF /* Mesh.cpp */; };
 		614F2BE72B219CA400914383 /* FiliCraft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614F2BE52B219CA400914383 /* FiliCraft.cpp */; };
 		61522F6E2B208D5D007629FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61522F6D2B208D5D007629FA /* main.cpp */; };
 		61FE92F12B222BB900DBA3BA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE92F02B222BB900DBA3BA /* OpenGL.framework */; };
@@ -27,6 +31,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		614699372B23D3B900C2B4DF /* B_Vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = B_Vertex.glsl; path = FiliCraft/Shaders/B_Shader/B_Vertex.glsl; sourceTree = SOURCE_ROOT; };
+		614699382B23D3E200C2B4DF /* B_Fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = B_Fragment.glsl; path = /Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/B_Shader/B_Fragment.glsl; sourceTree = "<absolute>"; };
+		614699392B23D46700C2B4DF /* ShaderLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderLoader.cpp; sourceTree = "<group>"; };
+		6146993A2B23D46700C2B4DF /* ShaderLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderLoader.hpp; sourceTree = "<group>"; };
+		6146993C2B23E0D700C2B4DF /* ShaderProgram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
+		6146993D2B23E0D700C2B4DF /* ShaderProgram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderProgram.hpp; sourceTree = "<group>"; };
+		614699422B23E68800C2B4DF /* DrawableObj.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DrawableObj.cpp; sourceTree = "<group>"; };
+		614699432B23E68800C2B4DF /* DrawableObj.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrawableObj.hpp; sourceTree = "<group>"; };
+		614699452B23E8BC00C2B4DF /* Mesh.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Mesh.cpp; path = FiliCraft/Mesh.cpp; sourceTree = SOURCE_ROOT; };
+		614699462B23E8BC00C2B4DF /* Mesh.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mesh.hpp; sourceTree = "<group>"; };
 		614F2BE52B219CA400914383 /* FiliCraft.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FiliCraft.cpp; sourceTree = "<group>"; };
 		614F2BE62B219CA400914383 /* FiliCraft.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FiliCraft.hpp; sourceTree = "<group>"; };
 		61522F6A2B208D5D007629FA /* FiliCraft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FiliCraft; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,12 +64,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		614699362B23D34500C2B4DF /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				614699412B23E47F00C2B4DF /* B_Shader */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		614699412B23E47F00C2B4DF /* B_Shader */ = {
+			isa = PBXGroup;
+			children = (
+				614699382B23D3E200C2B4DF /* B_Fragment.glsl */,
+				614699372B23D3B900C2B4DF /* B_Vertex.glsl */,
+			);
+			path = B_Shader;
+			sourceTree = "<group>";
+		};
 		61522F612B208D5D007629FA = {
 			isa = PBXGroup;
 			children = (
 				61522F6C2B208D5D007629FA /* FiliCraft */,
-				61522F6B2B208D5D007629FA /* Products */,
 				61FE92EF2B222BB900DBA3BA /* Frameworks */,
+				61522F6B2B208D5D007629FA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +102,17 @@
 			isa = PBXGroup;
 			children = (
 				614F2BE52B219CA400914383 /* FiliCraft.cpp */,
+				614699422B23E68800C2B4DF /* DrawableObj.cpp */,
+				614699432B23E68800C2B4DF /* DrawableObj.hpp */,
 				614F2BE62B219CA400914383 /* FiliCraft.hpp */,
 				61522F6D2B208D5D007629FA /* main.cpp */,
+				614699392B23D46700C2B4DF /* ShaderLoader.cpp */,
+				6146993A2B23D46700C2B4DF /* ShaderLoader.hpp */,
+				6146993C2B23E0D700C2B4DF /* ShaderProgram.cpp */,
+				6146993D2B23E0D700C2B4DF /* ShaderProgram.hpp */,
+				614699362B23D34500C2B4DF /* Shaders */,
+				614699452B23E8BC00C2B4DF /* Mesh.cpp */,
+				614699462B23E8BC00C2B4DF /* Mesh.hpp */,
 			);
 			path = FiliCraft;
 			sourceTree = "<group>";
@@ -144,7 +184,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614699472B23E8BC00C2B4DF /* Mesh.cpp in Sources */,
+				6146993B2B23D46700C2B4DF /* ShaderLoader.cpp in Sources */,
+				6146993E2B23E0D700C2B4DF /* ShaderProgram.cpp in Sources */,
 				61522F6E2B208D5D007629FA /* main.cpp in Sources */,
+				614699442B23E68800C2B4DF /* DrawableObj.cpp in Sources */,
 				614F2BE72B219CA400914383 /* FiliCraft.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

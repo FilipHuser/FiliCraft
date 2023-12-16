@@ -3,4 +3,86 @@
    uuid = "5D229BA2-DAA4-43E2-9485-236350ADDAD6"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2B5E3F2-D083-4172-875E-64F02BF4B8E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FiliCraft/ShaderProgram.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "ShaderProgram::ShaderProgram(vertexShader, fragmentShader)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5119DEA1-E124-4D5C-88C5-91B461D40AB8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FiliCraft/FiliCraft.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "FiliCraft::run()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5119DEA1-E124-4D5C-88C5-91B461D40AB8 - 31c4b663a0a9909f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FiliCraft::run()"
+                  moduleName = "FiliCraft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/filiphuser/Desktop/FiliCraft/FiliCraft/FiliCraft.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1240">
+               </Location>
+               <Location
+                  uuid = "5119DEA1-E124-4D5C-88C5-91B461D40AB8 - 31c4b663a0a9909f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FiliCraft::run()"
+                  moduleName = "FiliCraft"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/filiphuser/Desktop/FiliCraft/FiliCraft/FiliCraft.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1444">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A51E1EFC-5DBC-48BB-9586-71FFEDD38A6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FiliCraft/DrawableObj.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "DrawableObj::display()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

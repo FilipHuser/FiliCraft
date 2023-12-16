@@ -23,6 +23,10 @@
 #include <glm/gtc/matrix_transform.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 #include <glm/gtc/type_ptr.hpp> // glm::value_ptr
 
+#include "ShaderLoader.hpp"
+#include "Mesh.hpp"
+#include "DrawableObj.hpp"
+
 #include <string>
 
 class FiliCraft {
@@ -32,7 +36,7 @@ public:
     void GLFW_init();
     void GLEW_init();
     
-    void create_window(int width , int height , char* title);
+    void create_window(int width , int height , const char* title);
     void run();
     
 private:

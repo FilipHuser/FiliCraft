@@ -8,6 +8,7 @@
 #include <iostream>
 
 #include "FiliCraft.hpp"
+#include "ShaderLoader.hpp"
 
 int main(int argc, const char * argv[]) 
 {
@@ -16,6 +17,9 @@ int main(int argc, const char * argv[])
     fc.GLFW_init();
     fc.create_window(1200, 900, "Filicraft");
     fc.GLEW_init();
+    fc.run();
+    
+    
     
     return 0;
 }

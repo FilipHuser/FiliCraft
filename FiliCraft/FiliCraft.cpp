@@ -42,7 +42,7 @@ void FiliCraft::GLEW_init()
     glewInit();
 }
 
-void FiliCraft::create_window(int width, int height, char* title)
+void FiliCraft::create_window(int width, int height, const char* title)
 {
     this->window = glfwCreateWindow(width, height, title , NULL, NULL);
     
@@ -58,4 +58,41 @@ void FiliCraft::create_window(int width, int height, char* title)
     
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1);
+}
+
+void FiliCraft::run()
+{
+    ShaderLoader sl;
+    
+    
+    GLint vertexID = sl.loadShader("/Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/B_Shader/B_Vertex.glsl" , GL_VERTEX_SHADER);
+    
+    GLint fragmentID = sl.loadShader("/Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/B_Shader/B_Fragment.glsl" , GL_FRAGMENT_SHADER);
+    ShaderProgram b_sp(vertexID , fragmentID);
+    
+    std::vector vertices = {
+        -0.7f,  0.5f, 0.0f,  // Top Left
+        -0.5f, -0.1f, 0.0f,  // Bottom Left
+         0.5f, -0.4f, 0.0f,  // Bottom Right
+         0.6f,  0.5f, 0.0f   // Top Right
+    };
+    
+    Mesh m = Mesh(vertices , xyz , GL_TRIANGLE_FAN);
+    
+    DrawableObj triangle(m, b_sp);
+    
+    
+    while (!glfwWindowShouldClose(window))
+    {
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        
+        triangle.display();
+        
+        glfwPollEvents();
+        glfwSwapBuffers(window);
+    }
+
+     glfwDestroyWindow(window);
+     glfwTerminate();
+     exit(EXIT_SUCCESS);
 }

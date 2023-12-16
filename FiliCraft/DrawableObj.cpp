@@ -6,3 +6,10 @@
 //
 
 #include "DrawableObj.hpp"
+
+void DrawableObj::display()
+{
+    this->sp.use();
+    this->mesh.render();
+    this->sp.un_use();
+}
