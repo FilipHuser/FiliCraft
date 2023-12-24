@@ -10,23 +10,30 @@
 #pragma once
 
 #include <iostream>
+#include <glm/glm.hpp>
+#include <vector>
 
 #include "Mesh.hpp"
 #include "ShaderProgram.hpp"
-#include <glm/glm.hpp>
+#include "Transformation.hpp"
+#include "Material.hpp"
 
 class DrawableObj {
 public:
-    DrawableObj(Mesh mesh , ShaderProgram sp) : mesh(mesh) , sp(sp) , modelMatrix(glm::mat4(1.0)) {};
+    DrawableObj(Mesh mesh , ShaderProgram* sp , Material material) : mesh(new Mesh(mesh)) , sp(sp) , modelMatrix(glm::mat4(1.0)) , material(material) {};
+    DrawableObj(Mesh mesh , ShaderProgram* sp , Transformation* t ,  Material material);
     
     void display();
     
-    
-    
 private:
-    Mesh mesh;
-    ShaderProgram sp;
+    Mesh* mesh;
+    ShaderProgram* sp;
+    
     glm::mat4 modelMatrix;
+    
+    std::vector<Transformation*> transformations;
+    
+    Material material;
 };
 
 #endif /* DrawableObj_hpp */

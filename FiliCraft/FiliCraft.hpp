@@ -22,16 +22,24 @@
 #include <glm/mat4x4.hpp> // glm::mat4
 #include <glm/gtc/matrix_transform.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 #include <glm/gtc/type_ptr.hpp> // glm::value_ptr
+#include <memory.h>
 
+#include "Camera.hpp"
 #include "ShaderLoader.hpp"
 #include "Mesh.hpp"
 #include "DrawableObj.hpp"
+#include "CamObserver.hpp"
+
+//#include "Translation.hpp"
+//#include "Scale.hpp"
+//#include "Rotation.hpp"
+
 
 #include <string>
 
 class FiliCraft {
 public:
-    FiliCraft() : window(nullptr) , frameBuffer_width(-1) , frameBuffer_height(-1) {};
+    FiliCraft();
     
     void GLFW_init();
     void GLEW_init();
@@ -43,6 +51,8 @@ private:
     GLFWwindow* window;
     int frameBuffer_width;
     int frameBuffer_height;
+    
+    std::unique_ptr<Camera> cam;
 };
 
 #endif /* FiliCraft_hpp */

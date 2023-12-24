@@ -20,6 +20,11 @@ void print_info()
     printf("Using GLFW %i.%i.%i\n", major, minor, revision);
 }
 
+FiliCraft::FiliCraft() : window(nullptr) , frameBuffer_width(-1) , frameBuffer_height(-1)
+{
+    this->cam = std::make_unique<Camera>();
+}
+
 void FiliCraft::GLFW_init()
 {
     if (!glfwInit()) 
@@ -65,33 +70,79 @@ void FiliCraft::run()
     ShaderLoader sl;
     
     
-    GLint vertexID = sl.loadShader("/Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/B_Shader/B_Vertex.glsl" , GL_VERTEX_SHADER);
+    GLint vertexID = sl.loadShader("/Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/Lambert/LamVer.glsl" , GL_VERTEX_SHADER);
     
-    GLint fragmentID = sl.loadShader("/Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/B_Shader/B_Fragment.glsl" , GL_FRAGMENT_SHADER);
-    ShaderProgram b_sp(vertexID , fragmentID);
+    GLint fragmentID = sl.loadShader("/Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/Lambert/LamFra.glsl" , GL_FRAGMENT_SHADER);
+    ShaderProgram* b_sp = new ShaderProgram(vertexID , fragmentID);
+
+    Mesh m = Mesh("/Users/filiphuser/Desktop/FiliCraft/FiliCraft/Models/cube.obj");
+    Material matR(RED , 0.0);
+    Material matG(GREEN , 0.0);
     
-    std::vector vertices = {
-        -0.7f,  0.5f, 0.0f,  // Top Left
-        -0.5f, -0.1f, 0.0f,  // Bottom Left
-         0.5f, -0.4f, 0.0f,  // Bottom Right
-         0.6f,  0.5f, 0.0f   // Top Right
-    };
+    DrawableObj cube(m , b_sp , matR);
+    DrawableObj cube2(m , b_sp , matG);
     
-    Mesh m = Mesh(vertices , xyz , GL_TRIANGLE_FAN);
+    Observer* camObs = new CamObserver(b_sp);
     
-    DrawableObj triangle(m, b_sp);
+    this->cam->attach(camObs);
+    this->cam->notify(this->cam.get());
     
+    
+    
+    glEnable(GL_DEPTH_TEST);
+    
+    double lastX = 0.0 , lastY = 0.0;
+    
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     
     while (!glfwWindowShouldClose(window))
     {
+        if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+        {
+            this->cam->moveLeft();
+        }
+
+        if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+        {
+            this->cam->moveRight();
+        }
+        
+        if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+        {
+            this->cam->moveForward();
+        }
+
+        if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+        {
+            this->cam->moveBack();
+        }
+        
+        // Get the current mouse position
+        double xpos, ypos;
+        glfwGetCursorPos(window, &xpos, &ypos);
+
+        // Calculate the delta since the last update
+        double deltaX = xpos - lastX;
+        double deltaY = lastY - ypos; // Reversed since y-coordinates go from bottom to top
+
+        // Update last mouse position
+        lastX = xpos;
+        lastY = ypos;
+        
+        this->cam->lookAround(-deltaX, -deltaY);
+        
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         
-        triangle.display();
+        //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    
+        cube.display();
+        cube2.display();
         
         glfwPollEvents();
         glfwSwapBuffers(window);
     }
-
+    
+     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
      glfwDestroyWindow(window);
      glfwTerminate();
      exit(EXIT_SUCCESS);

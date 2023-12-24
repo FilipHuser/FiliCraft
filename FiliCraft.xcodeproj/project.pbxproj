@@ -13,6 +13,13 @@
 		614699472B23E8BC00C2B4DF /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614699452B23E8BC00C2B4DF /* Mesh.cpp */; };
 		614F2BE72B219CA400914383 /* FiliCraft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614F2BE52B219CA400914383 /* FiliCraft.cpp */; };
 		61522F6E2B208D5D007629FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61522F6D2B208D5D007629FA /* main.cpp */; };
+		61C9AEF02B37B3BB00B6F2DE /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C9AEDC2B37B3BA00B6F2DE /* Scene.cpp */; };
+		61C9AEF22B37B3BB00B6F2DE /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C9AEE12B37B3BB00B6F2DE /* Camera.cpp */; };
+		61C9AF022B3849D000B6F2DE /* libassimp.5.3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C9AF012B3849D000B6F2DE /* libassimp.5.3.0.dylib */; };
+		61C9AF0C2B384B2000B6F2DE /* Scale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C9AF032B384B2000B6F2DE /* Scale.cpp */; };
+		61C9AF0D2B384B2000B6F2DE /* Rotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C9AF052B384B2000B6F2DE /* Rotation.cpp */; };
+		61C9AF0E2B384B2000B6F2DE /* Subject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C9AF072B384B2000B6F2DE /* Subject.cpp */; };
+		61C9AF0F2B384B2000B6F2DE /* CamObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61C9AF0A2B384B2000B6F2DE /* CamObserver.cpp */; };
 		61FE92F12B222BB900DBA3BA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE92F02B222BB900DBA3BA /* OpenGL.framework */; };
 		61FE92F32B222BD800DBA3BA /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE92F22B222BD800DBA3BA /* libglfw.3.3.dylib */; };
 		61FE92F52B222C0000DBA3BA /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE92F42B222C0000DBA3BA /* libGLEW.2.2.0.dylib */; };
@@ -31,8 +38,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		614699372B23D3B900C2B4DF /* B_Vertex.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = B_Vertex.glsl; path = FiliCraft/Shaders/B_Shader/B_Vertex.glsl; sourceTree = SOURCE_ROOT; };
-		614699382B23D3E200C2B4DF /* B_Fragment.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = B_Fragment.glsl; path = /Users/filiphuser/Desktop/FiliCraft/FiliCraft/Shaders/B_Shader/B_Fragment.glsl; sourceTree = "<absolute>"; };
 		614699392B23D46700C2B4DF /* ShaderLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderLoader.cpp; sourceTree = "<group>"; };
 		6146993A2B23D46700C2B4DF /* ShaderLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderLoader.hpp; sourceTree = "<group>"; };
 		6146993C2B23E0D700C2B4DF /* ShaderProgram.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderProgram.cpp; sourceTree = "<group>"; };
@@ -45,6 +50,27 @@
 		614F2BE62B219CA400914383 /* FiliCraft.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FiliCraft.hpp; sourceTree = "<group>"; };
 		61522F6A2B208D5D007629FA /* FiliCraft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FiliCraft; sourceTree = BUILT_PRODUCTS_DIR; };
 		61522F6D2B208D5D007629FA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		61C9AEDA2B37B3BA00B6F2DE /* Camera.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		61C9AEDB2B37B3BA00B6F2DE /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		61C9AEDC2B37B3BA00B6F2DE /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		61C9AEE02B37B3BA00B6F2DE /* Translation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Translation.hpp; sourceTree = "<group>"; };
+		61C9AEE12B37B3BB00B6F2DE /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		61C9AEE22B37B3BB00B6F2DE /* Light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Light.hpp; sourceTree = "<group>"; };
+		61C9AEE32B37B3BB00B6F2DE /* Material.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Material.hpp; sourceTree = "<group>"; };
+		61C9AEEE2B37B3BB00B6F2DE /* Transformation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Transformation.hpp; sourceTree = "<group>"; };
+		61C9AF012B3849D000B6F2DE /* libassimp.5.3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libassimp.5.3.0.dylib; path = ../../../../opt/homebrew/Cellar/assimp/5.3.1/lib/libassimp.5.3.0.dylib; sourceTree = "<group>"; };
+		61C9AF032B384B2000B6F2DE /* Scale.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scale.cpp; sourceTree = "<group>"; };
+		61C9AF042B384B2000B6F2DE /* Scale.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scale.hpp; sourceTree = "<group>"; };
+		61C9AF052B384B2000B6F2DE /* Rotation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Rotation.cpp; sourceTree = "<group>"; };
+		61C9AF062B384B2000B6F2DE /* CamObserver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CamObserver.hpp; sourceTree = "<group>"; };
+		61C9AF072B384B2000B6F2DE /* Subject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subject.cpp; sourceTree = "<group>"; };
+		61C9AF082B384B2000B6F2DE /* Rotation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Rotation.hpp; sourceTree = "<group>"; };
+		61C9AF092B384B2000B6F2DE /* Subject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Subject.hpp; sourceTree = "<group>"; };
+		61C9AF0A2B384B2000B6F2DE /* CamObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CamObserver.cpp; sourceTree = "<group>"; };
+		61C9AF0B2B384B2000B6F2DE /* Observer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
+		61C9AF112B38501E00B6F2DE /* cube.obj */ = {isa = PBXFileReference; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+		61C9AF142B3850DC00B6F2DE /* LamVer.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; name = LamVer.glsl; path = FiliCraft/Shaders/Lambert/LamVer.glsl; sourceTree = SOURCE_ROOT; };
+		61C9AF152B3850EC00B6F2DE /* LamFra.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = LamFra.glsl; sourceTree = "<group>"; };
 		61FE92F02B222BB900DBA3BA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		61FE92F22B222BD800DBA3BA /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../opt/homebrew/Cellar/glfw/3.3.8/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		61FE92F42B222C0000DBA3BA /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../opt/homebrew/Cellar/glew/2.2.0_1/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
@@ -55,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C9AF022B3849D000B6F2DE /* libassimp.5.3.0.dylib in Frameworks */,
 				61FE92F52B222C0000DBA3BA /* libGLEW.2.2.0.dylib in Frameworks */,
 				61FE92F32B222BD800DBA3BA /* libglfw.3.3.dylib in Frameworks */,
 				61FE92F12B222BB900DBA3BA /* OpenGL.framework in Frameworks */,
@@ -64,23 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		614699362B23D34500C2B4DF /* Shaders */ = {
-			isa = PBXGroup;
-			children = (
-				614699412B23E47F00C2B4DF /* B_Shader */,
-			);
-			path = Shaders;
-			sourceTree = "<group>";
-		};
-		614699412B23E47F00C2B4DF /* B_Shader */ = {
-			isa = PBXGroup;
-			children = (
-				614699382B23D3E200C2B4DF /* B_Fragment.glsl */,
-				614699372B23D3B900C2B4DF /* B_Vertex.glsl */,
-			);
-			path = B_Shader;
-			sourceTree = "<group>";
-		};
 		61522F612B208D5D007629FA = {
 			isa = PBXGroup;
 			children = (
@@ -101,25 +111,77 @@
 		61522F6C2B208D5D007629FA /* FiliCraft */ = {
 			isa = PBXGroup;
 			children = (
-				614F2BE52B219CA400914383 /* FiliCraft.cpp */,
+				61C9AF122B38505D00B6F2DE /* Shaders */,
+				61C9AF102B38500800B6F2DE /* Models */,
+				61C9AEE12B37B3BB00B6F2DE /* Camera.cpp */,
+				61C9AEDA2B37B3BA00B6F2DE /* Camera.hpp */,
 				614699422B23E68800C2B4DF /* DrawableObj.cpp */,
 				614699432B23E68800C2B4DF /* DrawableObj.hpp */,
+				61C9AF0A2B384B2000B6F2DE /* CamObserver.cpp */,
+				61C9AF062B384B2000B6F2DE /* CamObserver.hpp */,
+				61C9AF0B2B384B2000B6F2DE /* Observer.hpp */,
+				61C9AF052B384B2000B6F2DE /* Rotation.cpp */,
+				61C9AF082B384B2000B6F2DE /* Rotation.hpp */,
+				61C9AF032B384B2000B6F2DE /* Scale.cpp */,
+				61C9AF042B384B2000B6F2DE /* Scale.hpp */,
+				61C9AF072B384B2000B6F2DE /* Subject.cpp */,
+				61C9AF092B384B2000B6F2DE /* Subject.hpp */,
+				614F2BE52B219CA400914383 /* FiliCraft.cpp */,
 				614F2BE62B219CA400914383 /* FiliCraft.hpp */,
+				61C9AEE22B37B3BB00B6F2DE /* Light.hpp */,
 				61522F6D2B208D5D007629FA /* main.cpp */,
+				61C9AEE32B37B3BB00B6F2DE /* Material.hpp */,
+				614699452B23E8BC00C2B4DF /* Mesh.cpp */,
+				614699462B23E8BC00C2B4DF /* Mesh.hpp */,
+				61C9AEDC2B37B3BA00B6F2DE /* Scene.cpp */,
+				61C9AEDB2B37B3BA00B6F2DE /* Scene.hpp */,
 				614699392B23D46700C2B4DF /* ShaderLoader.cpp */,
 				6146993A2B23D46700C2B4DF /* ShaderLoader.hpp */,
 				6146993C2B23E0D700C2B4DF /* ShaderProgram.cpp */,
 				6146993D2B23E0D700C2B4DF /* ShaderProgram.hpp */,
-				614699362B23D34500C2B4DF /* Shaders */,
-				614699452B23E8BC00C2B4DF /* Mesh.cpp */,
-				614699462B23E8BC00C2B4DF /* Mesh.hpp */,
+				61C9AEEE2B37B3BB00B6F2DE /* Transformation.hpp */,
+				61C9AEE02B37B3BA00B6F2DE /* Translation.hpp */,
 			);
 			path = FiliCraft;
+			sourceTree = "<group>";
+		};
+		61C9AF102B38500800B6F2DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61C9AF112B38501E00B6F2DE /* cube.obj */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61C9AF122B38505D00B6F2DE /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				61C9AF172B38546B00B6F2DE /* Constant */,
+				61C9AF132B3850AE00B6F2DE /* Lambert */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		61C9AF132B3850AE00B6F2DE /* Lambert */ = {
+			isa = PBXGroup;
+			children = (
+				61C9AF142B3850DC00B6F2DE /* LamVer.glsl */,
+				61C9AF152B3850EC00B6F2DE /* LamFra.glsl */,
+			);
+			path = Lambert;
+			sourceTree = "<group>";
+		};
+		61C9AF172B38546B00B6F2DE /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		61FE92EF2B222BB900DBA3BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61C9AF012B3849D000B6F2DE /* libassimp.5.3.0.dylib */,
 				61FE92F42B222C0000DBA3BA /* libGLEW.2.2.0.dylib */,
 				61FE92F22B222BD800DBA3BA /* libglfw.3.3.dylib */,
 				61FE92F02B222BB900DBA3BA /* OpenGL.framework */,
@@ -184,12 +246,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C9AF0E2B384B2000B6F2DE /* Subject.cpp in Sources */,
+				61C9AEF02B37B3BB00B6F2DE /* Scene.cpp in Sources */,
+				61C9AEF22B37B3BB00B6F2DE /* Camera.cpp in Sources */,
 				614699472B23E8BC00C2B4DF /* Mesh.cpp in Sources */,
 				6146993B2B23D46700C2B4DF /* ShaderLoader.cpp in Sources */,
 				6146993E2B23E0D700C2B4DF /* ShaderProgram.cpp in Sources */,
 				61522F6E2B208D5D007629FA /* main.cpp in Sources */,
+				61C9AF0C2B384B2000B6F2DE /* Scale.cpp in Sources */,
 				614699442B23E68800C2B4DF /* DrawableObj.cpp in Sources */,
+				61C9AF0F2B384B2000B6F2DE /* CamObserver.cpp in Sources */,
 				614F2BE72B219CA400914383 /* FiliCraft.cpp in Sources */,
+				61C9AF0D2B384B2000B6F2DE /* Rotation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,11 +388,13 @@
 					/opt/homebrew/Cellar/glfw/3.3.8/include,
 					/opt/homebrew/Cellar/glew/2.2.0_1/include,
 					/opt/homebrew/Cellar/glm/0.9.9.8/include,
+					/opt/homebrew/Cellar/assimp/5.3.1/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/glfw/3.3.8/lib,
 					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+					/opt/homebrew/Cellar/assimp/5.3.1/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -339,11 +409,13 @@
 					/opt/homebrew/Cellar/glfw/3.3.8/include,
 					/opt/homebrew/Cellar/glew/2.2.0_1/include,
 					/opt/homebrew/Cellar/glm/0.9.9.8/include,
+					/opt/homebrew/Cellar/assimp/5.3.1/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/glfw/3.3.8/lib,
 					/opt/homebrew/Cellar/glew/2.2.0_1/lib,
+					/opt/homebrew/Cellar/assimp/5.3.1/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

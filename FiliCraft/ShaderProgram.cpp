@@ -26,10 +26,22 @@ bool test_compile(GLint shaderProgramID)
 
 ShaderProgram::ShaderProgram(GLint vertexShader , GLint fragmentShader)
 {
+    this->viewMatrix = glm::lookAt(glm::vec3(0,0,5), glm::vec3(0,0,0), glm::vec3(0,-1,0));
+    this->projectionMatrix = glm::perspective(30.0, 1.5, 0.01, 100.0);
+    
     this->shaderProgramID = glCreateProgram();
     glAttachShader(this->shaderProgramID, fragmentShader);
     glAttachShader(this->shaderProgramID, vertexShader);
     glLinkProgram(this->shaderProgramID);
     
     test_compile(this->shaderProgramID);
+    
+    this->viewMatrixLoc = glGetUniformLocation(this->shaderProgramID, "viewMatrix");
+    this->projectionMatrixLoc = glGetUniformLocation(this->shaderProgramID, "projectionMatrix");
+}
+
+void ShaderProgram::send_uniforms()
+{
+    glUniformMatrix4fv(this->viewMatrixLoc, 1, GL_FALSE, glm::value_ptr(this->viewMatrix)); //VM
+    glUniformMatrix4fv(this->projectionMatrixLoc, 1, GL_FALSE, glm::value_ptr(this->projectionMatrix)); //PM
 }
